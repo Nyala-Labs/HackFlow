@@ -60,7 +60,7 @@ Once dependencies are installed, you can run the development server:
 ```bash
 pnpm run dev
 ```
-
+````
 This will start the application on `http://localhost:5173`.
 
 ### Available Scripts
