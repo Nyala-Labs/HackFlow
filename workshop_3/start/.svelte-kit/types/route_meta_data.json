@@ -1,0 +1,11 @@
+{
+	"/": [
+		"src/routes/+page.server.ts"
+	],
+	"/dynamic/[id]": [],
+	"/loading_data": [
+		"src/routes/loading_data/+page.ts",
+		"src/routes/loading_data/+page.server.ts"
+	],
+	"/state": []
+}
