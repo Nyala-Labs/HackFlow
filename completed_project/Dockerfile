@@ -14,8 +14,6 @@ COPY ./ ./
 
 RUN pnpm build
 
-EXPOSE 4173
+EXPOSE 3000
 
-
-
-CMD ["pnpm", "preview"]
+ENTRYPOINT ["node", "build"]
