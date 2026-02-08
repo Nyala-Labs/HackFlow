@@ -57,11 +57,10 @@
 
 # ------------------------------------------------------------
 # Expose port
-# Write the instruction that exposes port 4173
+# Write the instruction that exposes port 3000
 # ------------------------------------------------------------
 
 
 # ------------------------------------------------------------
-# Start command
-# Write the instruction that runs: pnpm preview
+# Run node 
 # ------------------------------------------------------------

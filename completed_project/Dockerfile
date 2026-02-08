@@ -16,4 +16,4 @@ RUN pnpm build
 
 EXPOSE 3000
 
-ENTRYPOINT ["node", "build"]
+ENTRYPOINT ["node", "build/index.js"]
