@@ -6,9 +6,11 @@ import { fail } from '@sveltejs/kit';
 import z from 'zod';
 import type { Actions } from './$types';
 
-const ai = new GoogleGenAI({
-	apiKey: env.API_KEY!
-});
+function getAI() {
+	return new GoogleGenAI({
+		apiKey: env.API_KEY!
+	});
+}
 
 export const actions = {
 	chat: async (event) => {
@@ -23,6 +25,7 @@ export const actions = {
 				response: null
 			});
 		}
+		const ai = getAI();
 		const response = await ai.models.generateContent({
 			model: 'gemini-2.5-flash',
 			config: {
